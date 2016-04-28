@@ -57,7 +57,6 @@ export default Component.extend({
   actions: {
     focusOut() {
       this._callCallback('focusOutCallback');
-      return true;
     }
   }
 });
