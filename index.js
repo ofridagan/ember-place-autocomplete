@@ -4,6 +4,10 @@
 module.exports = {
   name: 'ember-place-autocomplete',
   contentFor: function(type, config) {
+    if (!config['place-autocomplete']['loadGoogleAPI']) {
+      return '';
+    }
+
     var content = '';
     if (type === 'body-footer') {
       var src = "//maps.googleapis.com/maps/api/js",
